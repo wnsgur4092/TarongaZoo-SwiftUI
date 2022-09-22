@@ -11,6 +11,14 @@
 		BF8A488528DC98D8001D828A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A488428DC98D8001D828A /* ContentView.swift */; };
 		BF8A488728DC98D8001D828A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8A488628DC98D8001D828A /* Assets.xcassets */; };
 		BF8A488A28DC98D8001D828A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8A488928DC98D8001D828A /* Preview Assets.xcassets */; };
+		BF8A489328DC9EF9001D828A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A489228DC9EF9001D828A /* HomeView.swift */; };
+		BF8A489A28DCAAB7001D828A /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8A489928DCAAB7001D828A /* covers.json */; };
+		BF8A489D28DCAAD9001D828A /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A489C28DCAAD9001D828A /* CoverImageModel.swift */; };
+		BF8A489F28DCAB4C001D828A /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A489E28DCAB4C001D828A /* CodableBundleExtension.swift */; };
+		BF8A48A428DCAC00001D828A /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A48A328DCAC00001D828A /* CoverImageView.swift */; };
+		BF8A48A628DCB11A001D828A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8A48A528DCB11A001D828A /* events.json */; };
+		BF8A48A828DCB12D001D828A /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A48A728DCB12D001D828A /* EventsModel.swift */; };
+		BF8A48AA28DCB2E4001D828A /* EventListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A48A928DCB2E4001D828A /* EventListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		BF8A488428DC98D8001D828A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF8A488628DC98D8001D828A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8A488928DC98D8001D828A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF8A489228DC9EF9001D828A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BF8A489928DCAAB7001D828A /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = covers.json; path = ../../../../Resources/Data/covers.json; sourceTree = "<group>"; };
+		BF8A489C28DCAAD9001D828A /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		BF8A489E28DCAB4C001D828A /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		BF8A48A328DCAC00001D828A /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		BF8A48A528DCB11A001D828A /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = events.json; path = ../../../../Resources/Data/events.json; sourceTree = "<group>"; };
+		BF8A48A728DCB12D001D828A /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		BF8A48A928DCB2E4001D828A /* EventListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,12 @@
 		BF8A488128DC98D8001D828A /* TarongaZoo-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				BF8A488228DC98D8001D828A /* TarongaZoo_SwiftUIApp.swift */,
-				BF8A488428DC98D8001D828A /* ContentView.swift */,
+				BF8A48A228DCABAF001D828A /* App */,
+				BF8A489128DC9EE0001D828A /* View */,
+				BF8A489B28DCAAC2001D828A /* Model */,
+				BF8A489628DCA9D5001D828A /* Data */,
+				BF8A48A028DCAB52001D828A /* Extension */,
+				BF8A48A128DCAB6F001D828A /* Utility */,
 				BF8A488628DC98D8001D828A /* Assets.xcassets */,
 				BF8A488828DC98D8001D828A /* Preview Content */,
 			);
@@ -65,6 +85,58 @@
 				BF8A488928DC98D8001D828A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF8A489128DC9EE0001D828A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A489228DC9EF9001D828A /* HomeView.swift */,
+				BF8A48A328DCAC00001D828A /* CoverImageView.swift */,
+				BF8A48A928DCB2E4001D828A /* EventListItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8A489628DCA9D5001D828A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A48A528DCB11A001D828A /* events.json */,
+				BF8A489928DCAAB7001D828A /* covers.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BF8A489B28DCAAC2001D828A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A489C28DCAAD9001D828A /* CoverImageModel.swift */,
+				BF8A48A728DCB12D001D828A /* EventsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF8A48A028DCAB52001D828A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A489E28DCAB4C001D828A /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF8A48A128DCAB6F001D828A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BF8A48A228DCABAF001D828A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A488228DC98D8001D828A /* TarongaZoo_SwiftUIApp.swift */,
+				BF8A488428DC98D8001D828A /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8A48A628DCB11A001D828A /* events.json in Resources */,
 				BF8A488A28DC98D8001D828A /* Preview Assets.xcassets in Resources */,
+				BF8A489A28DCAAB7001D828A /* covers.json in Resources */,
 				BF8A488728DC98D8001D828A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8A489328DC9EF9001D828A /* HomeView.swift in Sources */,
 				BF8A488528DC98D8001D828A /* ContentView.swift in Sources */,
+				BF8A48AA28DCB2E4001D828A /* EventListItemView.swift in Sources */,
+				BF8A48A828DCB12D001D828A /* EventsModel.swift in Sources */,
 				BF8A488328DC98D8001D828A /* TarongaZoo_SwiftUIApp.swift in Sources */,
+				BF8A489D28DCAAD9001D828A /* CoverImageModel.swift in Sources */,
+				BF8A48A428DCAC00001D828A /* CoverImageView.swift in Sources */,
+				BF8A489F28DCAB4C001D828A /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
